@@ -70,6 +70,126 @@
           name: "openCms",
           type: "folder", 
           description: "Root Directory which contain jsp templates, js"
-        }
+        }, { 
+          key: "3",
+          parent: "2",
+          name: "lib",
+          type: "folder", 
+          description: "OpenCms's own library dependencies"
+        }, { 
+          key: "4",
+          parent: "2",
+          name: "src",
+          type: "folder", 
+          description: "web service (Java)"
+        }, { 
+          key: "4",
+          parent: "2",
+          name: "webapp",
+          type: "folder", 
+          description: ""
+        }, { 
+          key: "5",
+          parent: "4",
+          name: "META-INF",
+          type: "folder", 
+          description: "Contains all the manifest file which contains the meta data"
+        }, { 
+          key: "6",
+          parent: "4",
+          name: "setup",
+          type: "folder", 
+          description: "Contains the JSP pages, images and SQL scripts used during the setup of OpenCms."
+        }, { 
+          key: "7",
+          parent: "4",
+          name: "WEB-INF",
+          type: "folder", 
+          description: "Contains all the files related to web application"
+        }, { 
+          key: "8",
+          parent: "7",
+          name: "CmsPropertyFiles",
+          type: "folder", 
+          description: "Contains all the language specific data"
+        }, { 
+          key: "9",
+          parent: "7",
+          name: "classes",
+          type: "folder", 
+          description: "Filled with classes and classpath resources when you import and publish modules."
+        }, { 
+          key: "10",
+          parent: "7",
+          name: "config",
+          type: "folder", 
+          description: "OpenCms stores its configuration files here"
+        }, { 
+          key: "11",
+          parent: "7",
+          name: "content",
+          type: "folder", 
+          description: ""
+        }, { 
+          key: "12",
+          parent: "11",
+          name: "assets",
+          type: "folder", 
+          description: ""
+        }, { 
+          key: "13",
+          parent: "12",
+          name: "images",
+          type: "folder", 
+          description: ""
+        }, { 
+          key: "14",
+          parent: "12",
+          name: "stylesheets",
+          type: "folder", 
+          description: ""
+        }, { 
+          key: "15",
+          parent: "14",
+          name: "index.min.css",
+          type: "file", 
+          description: "Genrated using gulp task from another repo"
+        }, { 
+          key: "16",
+          parent: "12",
+          name: "javascripts",
+          type: "folder", 
+          description: ""
+        }, { 
+          key: "17",
+          parent: "16",
+          name: "bootstrap",
+          type: "folder", 
+          description: "Contains all the bootstrap js files(eg: bootstrap-datetimepicker.js)"
+        }, { 
+          key: "18",
+          parent: "16",
+          name: "header.js",
+          type: "file", 
+          description: "contains functions for header navigations, search and validations"
+        }, { 
+          key: "19",
+          parent: "16",
+          name: "custom.js",
+          type: "file", 
+          description: "Common functions for all pages"
+        }, { 
+          key: "20",
+          parent: "16",
+          name: "searchFlight.js",
+          type: "file", 
+          description: "contains the functions for searching for a flight"
+        }, { 
+          key: "21",
+          parent: "7",
+          name: "templates",
+          type: "folder", 
+          description: "Contains the jsp templates for all the pages"
+        },
     ];
     myDiagram.model = model;
