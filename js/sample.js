@@ -4,9 +4,9 @@
         "toolManager.hoverDelay": 100,
         initialContentAlignment: go.Spot.Center, // center Diagram contents
         "undoManager.isEnabled": true, // enable Ctrl-Z to undo and Ctrl-Y to redo
-        layout: $(go.TreeLayout, { angle: 0, layerSpacing: 35 })
+        layout: $(go.TreeLayout, { angle: 0, layerSpacing: 25 })
       });
-    var folderColor = "#e30613";
+    var folderColor = "#795548";
     var fileColor = "#46344e";
     myDiagram.add(
       $(go.Part, "Table", { position: new go.Point(200, -100), selectable: false },
@@ -33,7 +33,7 @@
         $(go.TextBlock, {
             font: "bold 14px Helvetica, bold Arial, sans-serif",
             wrap: go.TextBlock.WrapFit,
-            margin: 5
+            margin: 3
           },
           new go.Binding("text", "", tooltipTextConverter))
       );
@@ -49,7 +49,7 @@
         new go.Binding("text", "name"),
         $(go.Shape, "RoundedRectangle", { strokeWidth: 1, stroke: null, name: "SHAPE" },
           new go.Binding("fill", "type", color)),
-        $(go.TextBlock, "Default Text", { margin: 12, stroke: "white", font: "bold 16px sans-serif" },
+        $(go.TextBlock, "Default Text", { margin: 12, stroke: "white", font: "13px sans-serif" },
           new go.Binding("text", "name")),
         $("TreeExpanderButton",
         { alignment: go.Spot.Bottom, alignmentFocus: go.Spot.Top },
